@@ -26,7 +26,7 @@ public class Solution {
     }
 
     private String applyDiscount(String price, double discount) {
-        double discountedPrice = ((100 - discount) / 100) * Integer.parseInt(price);
+        double discountedPrice = ((100 - discount) / 100) * Long.parseLong(price);
         return String.format("%.2f", discountedPrice);
     }
 }
