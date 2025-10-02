@@ -37,7 +37,7 @@ public class Solution
 
     private string ApplyDiscount(string price, double discount)
     {
-        double discountedPrice = ((100 - discount) / 100) * int.Parse(price);
+        double discountedPrice = ((100 - discount) / 100) * long.Parse(price);
         return string.Format("{0:0.00.##}", discountedPrice);
     }
 }
